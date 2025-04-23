@@ -1,6 +1,6 @@
+import { disablePageScroll, enablePageScroll } from '@fluejs/noscroll';
 import { gsap } from 'gsap/dist/gsap.js';
 import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin.js';
-import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 gsap.registerPlugin(ScrollToPlugin);
 

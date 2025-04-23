@@ -5,7 +5,14 @@ import vituum from 'vituum';
 export default {
     plugins: [
         vituum({
+            input: [
+                './src/assets/scss/*/**.{css,pcss,scss,sass,less,styl,stylus}',
+                './src/assets/scripts/*/**.{js,ts,mjs}',
+            ],
             imports: {
+                paths: [
+                    './src/assets/scss/*/**', './src/assets/scripts/*/**',
+                ],
                 filenamePattern: {
                     '+.css': [],
                     '+.scss': 'src/assets/scss',

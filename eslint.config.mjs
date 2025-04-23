@@ -1,4 +1,4 @@
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([{
     rules: {
@@ -332,4 +332,4 @@ export default defineConfig([{
             'never',
         ],
     },
-}]);
+}, globalIgnores(["dist/**/*", '**/*+.js'])]);
