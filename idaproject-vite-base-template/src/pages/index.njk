@@ -1,0 +1,20 @@
+<!-- src/pages/index.njk -->
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+<div class="indexPage">
+  <div class="container">
+    <h1>Шаблон главной страницы</h1>
+    <p>Стили для страницы по адресу: "/src/assets/scss/pages/index.scss"</p>
+    <p>Скрипты для страницы по адресу: "/src/assets/scss/pages/index.scss"</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/assets/scss/pages/index.scss">
+{% endblock %}
+
+{% block scripts %}
+  <script src="/src/assets/scripts/pages/index.js"></script>
+{% endblock %}

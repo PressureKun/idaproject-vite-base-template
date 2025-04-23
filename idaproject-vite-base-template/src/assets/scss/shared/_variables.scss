@@ -1,0 +1,12 @@
+// Цвета, размеры и т.д. переехали в _variables-css.scss
+// Если нужны именно scss переменные то можно сюда, если не обязательно то в _variables-css.scss
+
+/* Breakpoints */
+$breakpoints: (
+    mobile: 0,
+    tablet-sm: 768px,
+    tablet: 1024px,
+    laptop: 1280px,
+    desktop: 1440px,
+    ultra: 1921px,
+);

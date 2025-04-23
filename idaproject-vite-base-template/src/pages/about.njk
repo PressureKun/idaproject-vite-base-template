@@ -1,0 +1,20 @@
+<!-- src/pages/about.njk -->
+{% extends "layouts/main.njk" %}
+
+{% block content %}
+<div class="aboutPage">
+  <div class="container">
+    <h1>Шаблон страницы "О нас"</h1>
+    <p>Стили для страницы по адресу: "/src/assets/scss/pages/about.scss"</p>
+    <p>Скрипты для страницы по адресу: "/src/assets/scss/pages/about.scss"</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/src/assets/scss/pages/about.scss">
+{% endblock %}
+
+{% block scripts %}
+  <script src="/src/assets/scripts/pages/about.js"></script>
+{% endblock %}

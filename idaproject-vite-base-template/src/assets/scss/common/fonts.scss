@@ -1,0 +1,13 @@
+@use "../shared/mixins" as *;
+
+@include font("PT-Rouble-Sans", "pt-rouble/PT-Rouble-Sans", normal);
+@include font("PT-Rouble-Serif", "pt-rouble/PT-Rouble-Serif", normal);
+@include font("SFProDisplay", "SFProDisplay-Ultralight", 100);
+@include font("SFProDisplay", "SFProDisplay-Thin", 200);
+@include font("SFProDisplay", "SFProDisplay-Light", 300);
+@include font("SFProDisplay", "SFProDisplay-Regular", normal);
+@include font("SFProDisplay", "SFProDisplay-Medium", 500);
+@include font("SFProDisplay", "SFProDisplay-Semibold", 600);
+@include font("SFProDisplay", "SFProDisplay-Bold", bold);
+@include font("SFProDisplay", "SFProDisplay-Heavy", 800);
+@include font("SFProDisplay", "SFProDisplay-Black", 900);

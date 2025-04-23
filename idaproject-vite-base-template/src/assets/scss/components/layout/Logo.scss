@@ -1,0 +1,66 @@
+.Logo {
+    cursor: pointer;
+
+    &._black {
+        --color: var(--base-500);
+    }
+
+    &._white {
+        --color: var(--white);
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__inner {
+        position: relative;
+        width: 9rem;
+        height: 3rem;
+        padding: 1px;
+    }
+
+    &__rectangleTop,
+    &__rectangleBottom {
+        position: absolute;
+        left: -1px;
+        overflow: hidden;
+
+        span {
+            position: absolute;
+            top: 0;
+            right: -2px;
+            left: -2px;
+            height: 100%;
+            background: linear-gradient(to right, var(--color) 50%, transparent 50%) 100%;
+            background-size: 200% 100%;
+        }
+    }
+
+    &__rectangleTop {
+        top: 0;
+        width: 39%;
+        height: 50%;
+    }
+
+    &__rectangleBottom {
+        bottom: 0;
+        width: 100%;
+        height: calc(50% + 1px);
+    }
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        color: var(--color);
+        transform: translate3d(0, 0, 0);
+    }
+
+    &__text {
+        margin-left: 2.4rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}

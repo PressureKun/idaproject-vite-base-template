@@ -1,0 +1,66 @@
+:root {
+
+    /* Typography */
+    --base-font: "SFProDisplay", sans-serif;
+    --base-font-size: 1.6rem;
+
+    /* Colors */
+    --base-0: #fff;
+    --base-100: #f2f2f7;
+    --base-200: #d9dce3;
+    --base-300: #afb4c0;
+    --base-400: #697180;
+    --base-500: #363c48;
+    --primary-100: #f0ecfe;
+    --primary-300: #b5a0fa;
+    --primary-500: #6a41f5;
+    --primary-600: #5534c4;
+    --primary-900: #442a9d;
+    --additional-valid-500: #7bad83;
+    --additional-error-100: #fbdcd8;
+    --additional-error-300: #f2958b;
+    --additional-error-500: #ea4e3d;
+    --additional-error-600: #cf2513;
+    --additional-success-100: #e0f3e0;
+    --additional-success-300: #a3dca3;
+    --additional-success-500: #65c466;
+    --additional-success-600: #519d52;
+    --opacity-white-20: rgb(255 255 255 / 20%);
+    --opacity-white-40: rgb(255 255 255 / 40%);
+    --opacity-white-60: rgb(255 255 255 / 60%);
+    --opacity-white-80: rgb(255 255 255 / 80%);
+
+    /* Aliases */
+    --body-color: var(--base-500);
+    --white: #fff;
+
+    /* Gradients */
+    --gradient-overlay: radial-gradient(248.5% 126.69% at 0% 100%, rgb(50 37 92 / 88%) 0%, rgb(55 58 65 / 88%) 100%);
+    --gradient-filled-72: rgb(54 60 72 / 72%);
+    --gradient-filled-12: rgb(30 30 34 / 12%);
+    --gradient-linear-64: linear-gradient(180deg, rgb(29 29 31 / 64%) 0%, rgb(29 29 31 / 0%) 100%);
+    --gradient-linear-32: linear-gradient(180deg, rgb(29 29 31 / 32%) 0%, rgb(29 29 31 / 0%) 100%);
+
+    /* Grid */
+    --header-h-tablet: 7.2rem;
+    --header-h-mobile: 7.2rem;
+    --anchor-offset: 2rem;
+    --header-z-index: 100;
+    --footer-h: 20rem;
+    --aside-padding: 6.4rem;
+    --aside-padding-mobile: 2rem;
+    --aside-padding-tablet: 2rem;
+    --header-h: 7.2rem;
+
+    /* Box-shadow */
+    --box-shadow-default: 0px 16px 24px 0px rgb(0 0 0 / 6%), 0px 2px 6px 0px rgb(0 0 0 / 4%), 0px 0px 1px 0px rgb(0 0 0 / 4%);
+    --box-shadow-tabs: .1rem .1rem .4rem 0 rgb(from var(--base-500) r g b / 80%);
+
+    /* Transitions */
+    --default-transition: .3s ease-in-out;
+
+    /* PDF */
+    --pdf-height: 1120px;
+    --pdf-width: 792px;
+    --pdf-diff: 1.33; // используем миксин pdf-diff вместо умножения: width: pdf-diff(42px); вместо width: calc(42px * var(--pdf-diff));
+}

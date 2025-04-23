@@ -1,0 +1,64 @@
+.TheHeader {
+    position: fixed;
+    top: 0;
+    z-index: var(--header-z-index);
+    width: 100%;
+    max-width: calc(100% - var(--noscroll-target-scrollbar-width, 0px));
+    height: var(--header-h);
+    transition: background-color var(--default-transition), box-shadow var(--default-transition), transform .3s linear;
+    box-shadow: 0 .2rem .8rem rgba(0 0 0 / 0%);
+
+    &._light {
+        background: var(--white);
+
+        &:after {
+            background-color: var(--base-300);
+        }
+    }
+
+    &._dark {
+        background-color: var(--base-500);
+
+        &:after {
+            background-color: var(--base-0);
+        }
+    }
+
+    &._transparent {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    &._scrolled {
+        box-shadow: 0 8px 8px rgba(0 0 0 / 8%);
+    }
+
+    &._hidden {
+        transform: translateY(-100%);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: var(--header-h);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+    }
+}
