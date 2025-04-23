@@ -332,4 +332,4 @@ export default defineConfig([{
             'never',
         ],
     },
-}, globalIgnores(["dist/**/*", '**/*+.js'])]);
+}, globalIgnores(['dist/**/*', '**/*+.js'])]);
